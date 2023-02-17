@@ -1,0 +1,18 @@
+<section>
+    <div>
+        {{#each resultTracks}}
+    <h1>
+        {{this.name}}
+            <audio
+                controls
+                src="{{this.preview_url}}">
+                    <a href="{{this.preview_url}}">
+                        Download audio
+                    </a>
+            </audio>
+    </h1>
+    {{/each}}
+    </div>
+</section>
+
+<section>
